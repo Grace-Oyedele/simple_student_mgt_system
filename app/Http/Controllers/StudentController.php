@@ -54,6 +54,7 @@ class StudentController extends Controller
 
     public function update(Request $request,$id)
     {
+
         $student= Student::find($id);
         $student->cne= $request->input('cne');
         $student->firstname= $request->input('firstname');
